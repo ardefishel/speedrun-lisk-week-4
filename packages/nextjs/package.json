@@ -15,8 +15,8 @@
   },
   "optionalDependencies": {
     "bigint-buffer": "^1.1.5",
-    "secp256k1": "^5.0.1",
     "bufferutil": "^4.0.9",
+    "secp256k1": "^5.0.1",
     "utf-8-validate": "^5.0.10"
   },
   "dependencies": {
