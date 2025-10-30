@@ -1,3 +1,4 @@
 {
-  "installCommand": "yarn install"
+  "installCommand": "python3 -m pip install --user setuptools && yarn install || yarn install",
+  "buildCommand": "yarn build"
 }
