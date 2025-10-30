@@ -13,6 +13,11 @@
     "vercel": "vercel",
     "vercel:yolo": "vercel --build-env NEXT_PUBLIC_IGNORE_BUILD_ERROR=true"
   },
+  "resolutions": {
+    "secp256k1": "^5.0.1",
+    "bigint-buffer": "^1.1.5",
+    "bufferutil": "^4.0.9"
+  },
   "dependencies": {
     "@ethersproject/providers": "^5.7.2",
     "@heroicons/react": "^2.0.11",

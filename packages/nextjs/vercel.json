@@ -1,4 +1,3 @@
 {
-  "installCommand": "yarn install",
-  "buildCommand": "python3 -m pip install setuptools && yarn install && yarn build"
+  "installCommand": "yarn install"
 }
