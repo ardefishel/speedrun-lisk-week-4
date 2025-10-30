@@ -1,3 +1,4 @@
+import { defineChain as defineChainThirdWeb } from "thirdweb";
 import { defineChain } from "viem";
 
 export const liskSepolia = /*#__PURE__*/ defineChain({
@@ -23,5 +24,31 @@ export const liskSepolia = /*#__PURE__*/ defineChain({
       url: "https://sepolia-blockscout.lisk.com",
     },
   },
+  testnet: true,
+});
+
+export const liskSepoliaThirdweb = defineChainThirdWeb({
+  id: 4202,
+  name: "Lisk Sepolia",
+  nativeCurrency: {
+    name: "Sepolia Ether",
+    symbol: "ETH",
+    decimals: 18,
+  },
+  // rpc: "https://rpc.sepolia-api.lisk.com",
+  rpcUrls: {
+    default: {
+      http: ["https://rpc.sepolia-api.lisk.com"],
+    },
+    public: {
+      http: ["https://rpc.sepolia-api.lisk.com"],
+    },
+  },
+  blockExplorers: [
+    {
+      name: "Blockscout",
+      url: "https://sepolia-blockscout.lisk.com",
+    },
+  ],
   testnet: true,
 });
